@@ -1,5 +1,6 @@
 import ProductGallery from "@/components/ProductGallery";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,6 +22,21 @@ export default function Home() {
           >
             Descubre Nuestros Productos
           </a>
+        </div>
+      </section>
+
+      {/* Blog Section Added Before Footer */}
+      <section className="py-20 bg-muted dark:bg-muted-dark">
+        <div className="container text-center animate-slide-up">
+          <h2 className="text-4xl font-serif font-bold mb-4 text-primary dark:text-primary-light">
+            Blog · Energía Orgónica, Historia y Conciencia
+          </h2>
+          <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-8">
+            Descubre el nuevo blog profesional sobre energía orgónica, orgonitas, activismo y nuestro trabajo artesanal desde 2015.
+          </p>
+          <Link href="/blog" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 shadow-lg">
+            Ir al Blog
+          </Link>
         </div>
       </section>
 
