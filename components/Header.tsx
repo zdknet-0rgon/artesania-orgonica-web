@@ -44,6 +44,12 @@ export default function Header() {
             Nosotros
           </Link>
           <Link
+            href="/blog"
+            className="text-sm font-medium transition-colors hover:text-primary"
+          >
+            Blog
+          </Link>
+          <Link
             href="/contacto"
             className="text-sm font-medium transition-colors hover:text-primary"
           >
