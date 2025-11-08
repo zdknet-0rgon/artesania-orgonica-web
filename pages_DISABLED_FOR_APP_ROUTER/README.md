@@ -1,0 +1,1 @@
+// Carpeta pages desactivada para migración a App Router (Next.js 14+)
