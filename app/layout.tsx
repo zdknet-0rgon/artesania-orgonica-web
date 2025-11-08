@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import DoubleHeader from "@/components/DoubleHeader";
+import WorkflowAlert from "@/components/WorkflowAlert";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange={false}
         >
+          <WorkflowAlert />
           <div className="flex min-h-screen flex-col">
             <DoubleHeader />
             <main className="flex-1">{children}</main>
