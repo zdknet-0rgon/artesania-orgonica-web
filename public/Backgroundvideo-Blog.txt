@@ -1,0 +1,5 @@
+*Archivo de vídeo para blog: incluir como background en sección Blog*
+
+[Uso: cubrir en cabecera principal blog, autoplay, loop, muted]
+
+filename: Backgroundvideo-Blog.mp4
