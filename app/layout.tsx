@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
-import DoubleHeader from "@/components/DoubleHeader";
-import WorkflowAlert from "@/components/WorkflowAlert";
-import Footer from "@/components/Footer";
+import './globals.css'
+import { ThemeProvider } from '@/components/ThemeProvider';
+import DoubleHeader from '@/components/DoubleHeader';
+import WorkflowAlert from '@/components/WorkflowAlert';
+import Footer from '@/components/Footer';
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Artesanía Orgónica - Productos Artesanales Naturales",
   description: "Descubre nuestra selección única de productos artesanales orgánicos hechos con amor y dedicación. Calidad premium para tu hogar.",
   keywords: ["artesanía", "orgánico", "productos naturales", "hecho a mano", "artesanal"],
@@ -13,24 +12,15 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Artesanía Orgónica - Productos Artesanales Naturales",
     description: "Productos artesanales orgánicos de calidad premium",
-    type: "website",
-  },
+    type: "website"
+  }
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="es" suppressHydrationWarning>
       <body className="theme-transition">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem
-          disableTransitionOnChange={false}
-        >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <WorkflowAlert />
           <div className="flex min-h-screen flex-col">
             <DoubleHeader />
