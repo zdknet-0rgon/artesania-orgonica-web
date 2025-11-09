@@ -1,0 +1,6 @@
+// Script limpieza y reinstalación
+{
+  "scripts": {
+    "clean-reinstall": "rimraf node_modules package-lock.json && npm install"
+  }
+}
