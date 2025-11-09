@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import LanguageSelector from './LanguageSelector';import SearchBar from '@/components/SearchBar';
-import SearchBar from './SearchBar'export default function DoubleHeader() {
+import LanguageSelector from './LanguageSelector';
+import SearchBar from './SearchBar';
+
+export default function DoubleHeader() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [searchResult, setSearchResult] = useState(null);
 
