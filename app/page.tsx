@@ -1,4 +1,4 @@
-import ProductGallery from "@/components/ProductGallery";
+import ProductGallery from "app/components/ProductGallery";
 import Image from "next/image";
 import Link from "next/link";
 
