@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Head from 'next/head';
-import BackgroundBlog from '@/components/BackgroundBlog';
+import BackgroundBlog from "app/components/BackgroundBlog";
 
 const BlogBackgroundVideo = () => (
   <div style={{ position: 'relative', width: '100vw', height: '60vh', overflow: 'hidden' }}>
