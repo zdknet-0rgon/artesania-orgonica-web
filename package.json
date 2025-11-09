@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "audit-fix": "npm audit fix --force && npm install"
+    "audit-fix": "npm audit fix --force && npm install",
+    "clean-reinstall": "rimraf node_modules package-lock.json && npm install"
   },
   "dependencies": {
     "next": "14.2.18",
