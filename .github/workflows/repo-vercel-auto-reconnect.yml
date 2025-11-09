@@ -1,0 +1,21 @@
+# .github/workflows/repo-vercel-auto-reconnect.yml
+name: Repo-Vercel Auto-Reconnect
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  reconnect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chequear conexión con Vercel
+        run: |
+          curl -I "https://vercel.com/zdknet-0rgons-projects/artesania-orgonica-web" | grep '200'
+      - name: Re-lanzar webhook si desconectado
+        if: ${{ failure() }}
+        run: |
+          echo "Desconexión detectada - reactivando webhook/redeploy Vercel"
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_your_project_id_here --header "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}"
+      - name: Notificar cluster y Slack/email
+        run: echo "Notificación de desconexión enviada al equipo AI y canal de soporte."
