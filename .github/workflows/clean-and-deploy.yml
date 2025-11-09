@@ -1,0 +1,19 @@
+name: Clean and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  clean-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Check for duplicate routes
+        run: |
+          chmod +x scripts/check-duplicate-routes.sh
+          bash scripts/check-duplicate-routes.sh
+      - name: Deploy if clean
+        run: echo "Desplegando... (aquí va tu comando de deploy)"
