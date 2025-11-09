@@ -1,0 +1,27 @@
+{
+  "title": "Artesanía Orgánica - Natural Handmade Products",
+  "home": {
+    "cta": "Discover Our Products",
+    "about": "At Artesanía Orgánica, we believe in the power of natural and handmade. Every product is crafted with the highest quality organic materials, respecting the environment and artisan traditions.",
+    "contact_btn": "Contact us via WhatsApp",
+    "blog_title": "Blog · Orgone Energy, History and Awareness"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout"
+  },
+  "login": {
+    "title": "Sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "login_btn": "Sign In",
+    "error_email": "Please enter a valid email.",
+    "error_password": "Minimum 6 characters."
+  },
+  "blog": {
+    "title": "Artesanía Orgánica Blog",
+    "desc": "Blog about orgone energy, orgonites and environmental activism. History, art and awareness since 2015."
+  }
+}
