@@ -1,0 +1,21 @@
+name: GitHub Models LLM API
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  llama-models-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Llama a GitHub Models API (LLMs)
+        run: |
+          curl -X POST https://api.github.com/models/llm/completions \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_MODELS_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d '{"model": "gpt-4", "prompt": "Tu prompt aquí", "max_tokens": 50}'
