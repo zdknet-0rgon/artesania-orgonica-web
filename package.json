@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npm ls inflight && npm run depcheck"
+    "postinstall": "npm ls inflight && npm run depcheck",
+    "depcheck": "npx depcheck"
   },
   "dependencies": {
     "next": "14.2.18",
