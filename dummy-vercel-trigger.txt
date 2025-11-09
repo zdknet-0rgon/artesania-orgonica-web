@@ -1,0 +1,3 @@
+# Trigger Build Dummy File
+
+Este archivo es solo para forzar un deploy limpio en Vercel y comprobar override de npm install --legacy-peer-deps.
