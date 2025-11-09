@@ -2,7 +2,7 @@ import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider';
 import DoubleHeader from '@/components/DoubleHeader';
 import WorkflowAlert from '@/components/WorkflowAlert';
-import Footer from '@/components/Footer';
+import Footer from 'app/components/Footer';
 
 export const metadata = {
   title: "Artesanía Orgónica - Productos Artesanales Naturales",
