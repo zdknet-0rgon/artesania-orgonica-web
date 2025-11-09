@@ -1,14 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
+import LanguageSelector from '@/components/LanguageSelector';
 
 export default function DoubleHeader() {
   return (
     <>
-      {/* Header superior ultrafino tipo Planck */}
+      {/* Header superior ultrafino tipo Planck con multiidioma y cuenta mejorado */}
       <header style={{background: '#0b132b', color: '#fff', fontSize: '0.95rem', height: 32, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 5%', borderBottom: '1px solid #222'}}>
         <div>
           <span>📦 Envío Gratis</span>
-          <span style={{marginLeft: 24}}>🌎 Multiidioma</span>
+          <span style={{marginLeft: 24}}><LanguageSelector /></span>
           <span style={{marginLeft: 24}}>☎️ Contacto</span>
         </div>
         <div style={{display: 'flex', gap: 24}}>
@@ -33,7 +34,11 @@ export default function DoubleHeader() {
         </div>
         <div style={{display: 'flex', gap: 32}}>
           <input type="search" placeholder="Buscar..." style={{padding:8,borderRadius:6, border:'1px solid #335'}} />
-          <button style={{background:'#27408b', color:'#fff', borderRadius:8, padding:'7px 18px', cursor:'pointer'}}>Cambiar tema</button>
+          <button style={{background:'#27408b', color:'#fff', borderRadius:8, padding:'7px 18px', cursor:'pointer'}} onClick={()=>{
+            if(typeof window!=="undefined"){
+              document.documentElement.classList.toggle('dark');
+            }
+          }}>Cambiar tema</button>
         </div>
       </header>
     </>
