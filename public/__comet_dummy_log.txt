@@ -1,0 +1,1 @@
+/* Asset/Log dummy para test build y verificación CI/CD */
