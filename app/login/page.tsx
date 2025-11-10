@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,7 +16,6 @@ export default function LoginPage() {
 
   const onSubmit = async (data: { email: string; password: string }) => {
     setLoginError(null);
-    // Simulación de login: email correcto es demo@orgonica.com y password demo123
     await new Promise(r => setTimeout(r, 800));
     if (data.email === 'demo@orgonica.com' && data.password === 'demo123') {
       alert(`Login correcto para: ${data.email}`);
