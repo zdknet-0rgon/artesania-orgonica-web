@@ -7,11 +7,11 @@ export default function CartPage() {
     { id: 2, nombre: 'Cemenite XL', precio: 58, cantidad: 2 }
   ]);
 
-  const updateCantidad = (id, cantidad) => {
+  const updateCantidad = (id: number, cantidad: number) => {
     setItems(items.map(item => item.id === id ? { ...item, cantidad } : item));
   };
 
-  const eliminar = id => {
+  const eliminar = (id: number) => {
     setItems(items.filter(item => item.id !== id));
   };
 
