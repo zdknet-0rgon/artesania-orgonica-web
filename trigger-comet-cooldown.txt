@@ -1,0 +1,2 @@
+# Trigger file para workflow automático tras cooldown
+# Si ves este commit, el workflow auto-rebuild-useformfix.yml se lanza automáticamente.
