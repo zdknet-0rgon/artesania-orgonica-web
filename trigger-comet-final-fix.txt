@@ -1,0 +1,1 @@
+/* Trigger redeploy final tras fix de error tipado cart, img blog y favicon. */
