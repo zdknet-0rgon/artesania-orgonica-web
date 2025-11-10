@@ -1,4 +1,4 @@
-import { NextIntlProvider } from 'next-intl';
+import { IntlProvider } from 'next-intl';
 
 export default function IntlLayout({ children, params }) {
   let locale = params?.locale || 'es';
@@ -8,5 +8,5 @@ export default function IntlLayout({ children, params }) {
   } catch {
     messages = require(`../messages/es.json`);
   }
-  return <NextIntlProvider messages={messages}>{children}</NextIntlProvider>;
+  return <IntlProvider messages={messages}>{children}</IntlProvider>;
 }
