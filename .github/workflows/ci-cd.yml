@@ -22,6 +22,10 @@ jobs:
         run: npm run lint
       - name: Run build
         run: npm run build
+      - name: Set SoundCloud token
+        env:
+          SOUNDCLOUD_TOKEN: ${{ secrets.SOUNDCLOUD_TOKEN }}
+        run: echo "SoundCloud listo: $SOUNDCLOUD_TOKEN en Github Action!"
       - name: Deploy to Vercel (preview on PR)
         uses: amondnet/vercel-action@v20
         with:
@@ -31,6 +35,7 @@ jobs:
           working-directory: ./
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          SOUNDCLOUD_TOKEN: ${{ secrets.SOUNDCLOUD_TOKEN }}
 
   test:
     runs-on: ubuntu-latest
