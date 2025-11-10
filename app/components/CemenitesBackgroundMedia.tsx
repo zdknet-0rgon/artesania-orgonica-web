@@ -13,7 +13,8 @@ const CemenitesBackgroundMedia = () => {
         style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.78)', display: 'block' }}
         poster="/images/cemenites-bg-fallback.jpg"
         onError={e => {
-          e.target.style.display = 'none';
+          const target = e.target as HTMLVideoElement;
+          target.style.display = 'none';
           const fallback = document.getElementById('cemenites-fallback-image');
           if (fallback) fallback.style.display = 'block';
         }}
