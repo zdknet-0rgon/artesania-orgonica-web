@@ -1,0 +1,28 @@
+name: Deploy Vercel One Build Only
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-single:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: vercel-deploy-group
+      cancel-in-progress: true
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+      - name: Node y dependencias limpias
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Limpieza total y reinstalación
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install
+      - name: Build y deploy
+        run: |
+          npm run build
+          npx vercel --prod --confirm
