@@ -1,12 +1,12 @@
-# .github/workflows/ai-cluster-demo.yml
 name: AI Cluster Demo: Copilot, Gemini, Comet, Perplexity
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - comet-copilot-gemini-fix
+  pull_request:
+    branches:
+      - main
+
 jobs:
   copilot-code:
     runs-on: ubuntu-latest
@@ -16,22 +16,26 @@ jobs:
       - name: Copilot Coding Agent
         if: ${{ github.repository_owner == 'zdknet-0rgon' }}
         run: echo "Activando GitHub Copilot Agent (debe estar habilitado en settings de repo)"
+
   gemini-review:
     runs-on: ubuntu-latest
     steps:
       - name: Gemini (Google AI Studio) Review
         run: |
           echo "Llamando API Gemini para revisión de código y dependencias\nGemini debe tener la APIKey configurada como secret en GitHub: GEMINI_API_KEY"
+
   perplexity-feedback:
     runs-on: ubuntu-latest
     steps:
       - name: Perplexity Pro Agent Feedback
         run: echo "Feedback e Insights desde Perplexity Pro AI (requiere integración de API)"
+
   comet-orchestrator:
     runs-on: ubuntu-latest
     steps:
       - name: Comet Workflow Orchestrator
         run: echo "Cluster dirigido por Comet. Coordina feedback y triggers entre agents copilot/gemini/perplexity y push automatico a Vercel/GitHub."
+
   vercel-deploy:
     runs-on: ubuntu-latest
     steps:
