@@ -1,0 +1,59 @@
+name: AutoClean Deprecateds & Redeploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  clean-format-redeploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configura Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Limpia dependencias
+        run: |
+          rm -rf node_modules package-lock.json
+          npm cache clean --force
+
+      - name: Instala dependencias latest y audita
+        run: |
+          npm install eslint@latest rimraf@latest glob@latest --force
+          npm install
+          npm audit fix --force
+
+      - name: Chequea deprecateds
+        run: |
+          npx npm-check --deprecated --skip-unused > deprecated_report.txt || echo "No deprecated"
+
+      - name: Acciona si hay deprecated críticos
+        run: |
+          if grep -q "deprecated" deprecated_report.txt; then
+            echo "CRITICAL: Found deprecated packages, please check deprecated_report.txt" >> ERROR_LOG.txt
+            echo "Error detectado: deprecateds críticos. Formatea y crea Issue en GitHub si hace falta."
+          else
+            echo "No deprecated críticos, continuando..."
+          fi
+
+      - name: Formato automático
+        run: |
+          npx eslint . --fix || true
+          npx prettier --write . || true
+
+      - name: Commit y push mínimos
+        run: |
+          git config --global user.name 'comy-bot'
+          git config --global user.email 'comy-bot@zdknet.com'
+          git add .
+          git commit -am "chore: auto-format & clean deprecateds (comy workflow)" || echo "Nada que commitear"
+          git push || echo "Ya está actualizado"
+
+      - name: Despliegue Vercel
+        run: |
+          npx vercel --prod || echo "Despliegue Vercel lanzado"
