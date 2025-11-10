@@ -14,5 +14,5 @@ export default function IntlLayout({ children, params }: Props) {
   } catch {
     messages = require(`../messages/es.json`);
   }
-  return <IntlProvider messages={messages}>{children}</IntlProvider>;
+  return <IntlProvider messages={messages} locale={locale}>{children}</IntlProvider>;
 }
