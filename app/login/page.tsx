@@ -13,8 +13,7 @@ export default function LoginPage() {
     resolver: zodResolver(schema)
   });
 
-  const onSubmit = async (data) => {
-    // Aquí se implementa lógica de login/API
+  const onSubmit = async (data: { email: string; password: string }) => {
     alert(`Login correcto para: ${data.email}`);
   };
 
