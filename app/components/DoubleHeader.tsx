@@ -15,7 +15,7 @@ export default function DoubleHeader() {
         <div>
           <span>📦 Envío Gratis</span>
           <span style={{marginLeft: 24}}><LanguageSelector /></span>
-          <span style={{marginLeft: 24}}>☎️ Contacto</span>
+          <span style={{marginLeft: 24}}☎️ Contacto</span>
         </div>
         <div style={{display: 'flex', gap: 24}}>
           <Link href="/login">Mi Cuenta</Link>
