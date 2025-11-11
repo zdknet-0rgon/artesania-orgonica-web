@@ -40,7 +40,7 @@ export default function DoubleHeader() {
           </nav>
         </div>
         <div style={{display: 'flex', gap: 32}}>
-          <SearchBar onSearch={q=>setSearchResult(q)}/>
+          <SearchBar onSearch={(q: string)>setSearchResult(q)}/>
           <button style={{background:'#27408b', color:'#fff', borderRadius:8, padding:'7px 18px', cursor:'pointer'}} onClick={()=>{
             if(typeof window!=="undefined"){
               document.documentElement.classList.toggle('dark');
