@@ -15,13 +15,14 @@ export default function DoubleHeader() {
         <div>
           <span>📦 Envío Gratis</span>
           <span style={{marginLeft: 24}}><LanguageSelector /></span>
-          <span style={{marginLeft: 24}}☎️ Contacto</span>
+          <span style={{marginLeft: 24}}>☎️ Contacto</span>
         </div>
         <div style={{display: 'flex', gap: 24}}>
           <Link href="/login">Mi Cuenta</Link>
           <Link href="/cart">Carrito</Link>
         </div>
       </header>
+
       {/* Header principal sticky/menu Planck con búsqueda y menú pro */}
       <header style={{background: '#1c2541', color: '#fff', fontWeight: 'bold', fontSize: '1.1rem', height: 72, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 5%', position: 'sticky', top: 0, zIndex: 99, boxShadow: '0 2px 10px rgba(10,20,40,0.10)'}}>
         <div style={{display:'flex',alignItems:'center',gap:24}}>
@@ -48,6 +49,7 @@ export default function DoubleHeader() {
           }}>Cambiar tema</button>
         </div>
       </header>
+
       {/* Render resultado de búsqueda si existe, solo como demo UX */}
       {searchResult && <div style={{background:'#ffe',color:'#111',padding:'12px 24px',textAlign:'center'}}>Buscar: <b>{searchResult}</b></div>}
     </>
