@@ -32,6 +32,6 @@
     "postcss": "8.4.35",
     "autoprefixer": "10.4.17",
     "rimraf": "4.4.1",
-    "glob": "9.3.2,
+    "glob": "9.3.2
   }
 }
