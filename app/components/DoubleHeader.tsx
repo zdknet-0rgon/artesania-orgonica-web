@@ -6,8 +6,7 @@ import SearchBar from './SearchBar';
 
 export default function DoubleHeader() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [searchResult, setSearchR<string | null>esult] = useState(null);
-
+  const [searchResult, setSearchResult] = useState<string | null>(null);
   return (
     <>
       {/* Header superior ultrafino tipo Planck con multiidioma y cuenta mejorado */}
