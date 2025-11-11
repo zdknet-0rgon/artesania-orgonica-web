@@ -9,12 +9,14 @@ const schema = z.object({
   password: z.string().min(6, { message: 'Mínimo 6 caracteres.' })
 });
 
+type FormData = z.infer<typeof schema>;
+
 export default function LoginPage() {
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm({ resolver: zodResolver(schema) });
+  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormData>({ resolver: zodResolver(schema) });
   const [loginError, setLoginError] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(false);
 
-  const onSubmit = async (data: { email: string; password: string }) => {
+  const onSubmit = async (data: FormData) => {
     setLoginError(null);
     await new Promise(r => setTimeout(r, 800));
     if (data.email === 'demo@orgonica.com' && data.password === 'demo123') {
