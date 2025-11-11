@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 
 export default function DoubleHeader() {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [searchResult, setSearchResult] = useState(null);
+  const [searchResult, setSearchR<string | null>esult] = useState(null);
 
   return (
     <>
