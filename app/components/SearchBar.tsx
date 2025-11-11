@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Props = {
-  onSearch?: (query: any) => void;
+  onSearch?: (query: string) => void;
 };
 
 export default function SearchBar({ onSearch }: Props) {
