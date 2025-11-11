@@ -16,8 +16,7 @@ export const metadata = {
   }
 };
 
-export default function RootLayout({ children: React.ReactNode }) { }) {
-  return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {  return (
     <html lang="es" suppressHydrationWarning>
       <body className="theme-transition">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
