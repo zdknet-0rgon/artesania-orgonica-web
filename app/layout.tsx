@@ -1,6 +1,6 @@
 import './globals.css';
 import { ThemeProvider } from './components/theme-provider';
-import DoubleHeader from './components/DoubleHeader';
+import Header from '../components/Header';
 import Footer from './components/Footer';
 import WorkflowAlert from './components/WorkflowAlert';
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <WorkflowAlert />
           <div className="flex min-h-screen flex-col">
-            <DoubleHeader />
+            <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
