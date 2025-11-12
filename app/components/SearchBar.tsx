@@ -10,10 +10,10 @@ export default function SearchBar({ onSearch }: Props) {
     <input
       type="search"
       placeholder="Buscar..."
-      onChange={e => {
+      onChange={(e) => {
         if (onSearch) onSearch(e.target.value);
       }}
-      style={{ padding: '6px 16px', borderRadius: 8, border: '1px solid #ccc' }}
+      style={{ padding: '6px 16px', borderRadius: '8px' }}
     />
   );
 }
