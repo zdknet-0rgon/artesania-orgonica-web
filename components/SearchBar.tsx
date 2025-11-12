@@ -1,12 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function SearchBar({onSearch}) {
-  const [query, setQuery] = useState("");
+type Props = {
+  onSearch?: (query: string) => void;
+};
 
+export default function SearchBar({ onSearch }: Props) {
+  // Demo: input básico para probar la prop
   return (
-    <form onSubmit={e=>{e.preventDefault();onSearch(query)}} style={{ display: 'inline-flex', alignItems: 'center', gap: 9 }}>
-      <input value={query} onChange={e => setQuery(e.target.value)} type="search" placeholder="Buscar productos..." style={{ padding: 8, borderRadius: 6, border: '1px solid #335' }} />
-      <button type="submit" style={{ background: '#27408b', color: '#fff', borderRadius: 8, padding: '7px 18px', cursor: 'pointer', fontWeight:'bold'}}>Buscar</button>
-    </form>
-  )
+    <input
+      type="search"
+      placeholder="Buscar..."
+      onChange={(e) => {
+        if (onSearch) onSearch(e.target.value);
+      }}
+      style={{ padding: '6px 16px', borderRadius: '8px' }}
+    />
+  );
 }
