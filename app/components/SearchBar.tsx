@@ -4,7 +4,7 @@ type Props = {
   onSearch?: (query: string) => void;
 };
 
-export default function SearchBar({ onSearch : Props}: Props) {
+export default function SearchBar({ onSearch }: Props) {
   // Demo: input básico para probar la prop
   return (
     <input
