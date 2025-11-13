@@ -63,7 +63,7 @@ export default function Header() {
                   <div className="text-2xl font-serif font-bold text-primary">AO</div>
                 )}
               </motion.div>
-              <span className="text-2xl font-serif font-bold hidden sm:inline">
+              <span className="text-2xl font-serif font-bold">
                 Artesanía Orgónica
               </span>
             </Link>
