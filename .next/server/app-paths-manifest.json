@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/login/page": "app/login/page.js",
+  "/products/cemenites/page": "app/products/cemenites/page.js",
+  "/products/orgonitas/page": "app/products/orgonitas/page.js",
+  "/page": "app/page.js",
+  "/blog/page": "app/blog/page.js"
+}
