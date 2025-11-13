@@ -1,8 +1,7 @@
 'use client';
-
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import { addToCart } from '@/lib/cart';
 
 interface Product {
   id: string;
@@ -26,10 +25,20 @@ export default function ProductGallery() {
         setLoading(false);
       })
       .catch(err => {
-        console.error('Error loading products:', err);
+        console.error('Error:', err);
         setLoading(false);
       });
   }, []);
+
+  const handleAddToCart = (product: Product) => {
+    addToCart({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      image: product.image
+    });
+    alert('Producto añadido al carrito');
+  };
 
   if (loading) {
     return (
@@ -44,33 +53,39 @@ export default function ProductGallery() {
       {products.map((product) => (
         <div
           key={product.id}
-          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105"
         >
-          <div className="relative h-64 bg-gray-200 dark:bg-gray-700">
-            <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-              📦
-            </div>
+          <div className="relative h-64 bg-gradient-to-br from-amber-50 to-orange-100 dark:from-gray-700 dark:to-gray-800 flex items-center justify-center">
+            <span className="text-6xl">📦</span>
           </div>
           <div className="p-4">
             <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
               {product.name}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
+            <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2">
               {product.description}
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-3">
               <span className="text-2xl font-bold text-amber-600">
                 {product.price.toFixed(2)}€
               </span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">
+                Stock: {product.stock}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => handleAddToCart(product)}
+                className="flex-1 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors font-medium"
+              >
+                �� Añadir
+              </button>
               <Link
                 href={`/products/${product.id}`}
-                className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg transition-colors"
+                className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white px-4 py-2 rounded-lg transition-colors text-center"
               >
-                Ver más
+                Ver
               </Link>
-            </div>
-            <div className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-              Stock: {product.stock} unidades
             </div>
           </div>
         </div>
