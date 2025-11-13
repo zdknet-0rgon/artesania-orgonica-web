@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-accent/20 to-transparent dark:from-accent-dark/20" />
         <div className="container relative z-10 text-center px-4 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-primary dark:text-primary-light">
-            Artesanía Orgánica
+            Artesanía Orgonica
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-foreground/80">
             Productos artesanales naturales hechos con amor y dedicación.
@@ -29,10 +29,10 @@ export default function Home() {
       <section className="py-20 bg-muted dark:bg-muted-dark">
         <div className="container text-center animate-slide-up">
           <h2 className="text-4xl font-serif font-bold mb-4 text-primary dark:text-primary-light">
-            Blog · Energía Orgónica, Historia y Conciencia
+            Blog · Energía Orgonica, Historia y Conciencia
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-8">
-            Descubre el nuevo blog profesional sobre energía orgónica, orgonitas, activismo y nuestro trabajo artesanal desde 2015.
+            Descubre el nuevo blog profesional sobre energía orgonica, orgonitas, activismo y nuestro trabajo artesanal desde 2015.
           </p>
           <Link href="/blog" className="inline-block bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all hover:scale-105 shadow-lg">
             Ir al Blog
@@ -49,7 +49,7 @@ export default function Home() {
                 Nuestra Historia
               </h2>
               <p className="text-lg mb-4 leading-relaxed">
-                En Artesanía Orgánica, creemos en el poder de lo natural y lo hecho a mano.
+                En Artesanía Orgonica, creemos en el poder de lo natural y lo hecho a mano.
                 Cada producto es creado con materiales orgánicos de la más alta calidad,
                 respetando el medio ambiente y las tradiciones artesanales.
               </p>

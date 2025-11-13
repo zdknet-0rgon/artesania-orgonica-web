@@ -64,7 +64,7 @@ export default function Header() {
                 )}
               </motion.div>
               <span className="text-2xl font-serif font-bold">
-                Artesanía Orgónica
+                Artesanía Orgonica
               </span>
             </Link>
 

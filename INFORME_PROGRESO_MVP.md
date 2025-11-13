@@ -10,7 +10,7 @@
 
 #### Mañana (4h): Correcciones Críticas
 - ✅ **Header visible en producción**: Resuelto problema CSS que ocultaba el header
-- ✅ **Branding correcto**: "Artesana Orgánica" con tilde correcta en todos los archivos
+- ✅ **Branding correcto**: "Artesana Orgonica" con tilde correcta en todos los archivos
 - ✅ **Deploy verificado**: https://artesania-orgonica-web.vercel.app funcionando
 
 #### Tarde (4h): Autenticación Básica

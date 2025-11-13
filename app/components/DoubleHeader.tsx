@@ -25,7 +25,7 @@ export default function DoubleHeader() {
       {/* Header principal sticky/menu Planck con búsqueda y menú pro */}
       <header style={{background: '#1c2541', color: '#fff', fontWeight: 'bold', fontSize: '1.1rem', height: 72, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 5%', position: 'sticky', top: 0, zIndex: 99, boxShadow: '0 2px 10px rgba(10,20,40,0.10)'}}>
         <div style={{display:'flex',alignItems:'center',gap:24}}>
-          <Link href="/">Artesanía Orgónica</Link>
+          <Link href="/">Artesanía Orgonica</Link>
           <nav style={{display:'flex',alignItems:'center',gap:16}}>
             <div style={{position:'relative'}} onMouseEnter={()=>setShowDropdown(true)} onMouseLeave={()=>setShowDropdown(false)}>
               <span style={{cursor:'pointer'}}>Productos ▾</span>

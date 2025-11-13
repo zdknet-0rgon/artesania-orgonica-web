@@ -5,12 +5,12 @@ import Footer from './components/Footer';
 import WorkflowAlert from './components/WorkflowAlert';
 
 export const metadata = {
-  title: "Artesanía Orgónica - Productos Artesanales Naturales",
+  title: "Artesanía Orgonica - Productos Artesanales Naturales",
   description: "Descubre nuestra selección única de productos artesanales orgánicos hechos con amor y dedicación. Calidad premium para tu hogar.",
   keywords: ["artesanía", "orgánico", "productos naturales", "hecho a mano", "artesanal"],
-  authors: [{ name: "Artesanía Orgónica" }],
+  authors: [{ name: "Artesanía Orgonica" }],
   openGraph: {
-    title: "Artesanía Orgónica - Productos Artesanales Naturales",
+    title: "Artesanía Orgonica - Productos Artesanales Naturales",
     description: "Productos artesanales orgánicos de calidad premium",
     type: "website"
   }

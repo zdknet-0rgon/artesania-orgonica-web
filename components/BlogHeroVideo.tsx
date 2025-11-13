@@ -8,7 +8,7 @@ export default function BlogHeroVideo() {
         Tu navegador no soporta el formato de video.
       </video>
       <div className="absolute inset-0 bg-black/20 flex flex-col justify-center items-center z-10 text-white">
-        <h1 className="text-5xl font-bold drop-shadow-lg mb-2">Blog Artesanía Orgónica</h1>
+        <h1 className="text-5xl font-bold drop-shadow-lg mb-2">Blog Artesanía Orgonica</h1>
         <h2 className="text-xl font-semibold drop-shadow">Orgón, Conciencia & Activismo</h2>
       </div>
     </div>

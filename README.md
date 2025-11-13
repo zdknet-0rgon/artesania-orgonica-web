@@ -1,4 +1,4 @@
-# Artesanía Orgónica Web
+# Artesanía Orgonica Web
 
 **E-commerce premium de productos artesanales orgónicos con modo oscuro/claro inteligente, utilizando Next.js y Tailwind.**
 

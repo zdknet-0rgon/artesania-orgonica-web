@@ -1,10 +1,10 @@
 {
-  "title": "Artesanía Orgónica - Productos Artesanales Naturales",
+  "title": "Artesanía Orgonica - Productos Artesanales Naturales",
   "home": {
     "cta": "Descubre Nuestros Productos",
-    "about": "En Artesanía Orgónica, creemos en el poder de lo natural y lo hecho a mano. Cada producto es creado con materiales orgánicos de la más alta calidad, respetando el medio ambiente y las tradiciones artesanales.",
+    "about": "En Artesanía Orgonica, creemos en el poder de lo natural y lo hecho a mano. Cada producto es creado con materiales orgánicos de la más alta calidad, respetando el medio ambiente y las tradiciones artesanales.",
     "contact_btn": "Contáctanos por WhatsApp",
-    "blog_title": "Blog · Energía Orgónica, Historia y Conciencia"
+    "blog_title": "Blog · Energía Orgonica, Historia y Conciencia"
   },
   "cart": {
     "title": "Carrito de compra",
@@ -21,7 +21,7 @@
     "error_password": "Mínimo 6 caracteres."
   },
   "blog": {
-    "title": "Blog Artesanía Orgónica",
-    "desc": "Blog sobre energía orgónica, orgonitas y activismo ambiental. Historia, arte y consciencia desde 2015."
+    "title": "Blog Artesanía Orgonica",
+    "desc": "Blog sobre energía orgonica, orgonitas y activismo ambiental. Historia, arte y consciencia desde 2015."
   }
 }

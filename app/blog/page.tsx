@@ -29,13 +29,13 @@ export default function BlogPage() {
   return (
     <>
       <Head>
-        <title>Blog · Energía Orgónica | Activismo & Historia</title>
-        <meta name="description" content="Blog sobre energía orgónica, orgonitas y activismo ambiental. Historia, arte y consciencia desde 2015." />
+        <title>Blog · Energía Orgonica | Activismo & Historia</title>
+        <meta name="description" content="Blog sobre energía orgonica, orgonitas y activismo ambiental. Historia, arte y consciencia desde 2015." />
       </Head>
       <BackgroundBlog />
       <BlogBackgroundVideo />
       <main style={{ padding: '3vw', maxWidth: 900, margin: 'auto', background: 'rgba(255,255,255,0.92)', borderRadius: 18 }}>
-        <h1 style={{fontWeight:'bold',fontSize:36,color:'#294'}}>Blog Artesanía Orgónica</h1>
+        <h1 style={{fontWeight:'bold',fontSize:36,color:'#294'}}>Blog Artesanía Orgonica</h1>
         {/* ...resto del blog como antes... */}
       </main>
     </>
