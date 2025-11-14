@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Orgonite Piramidal",
+    "description": "Pieza premium con cobre y cuarzo para armonización",
+    "image": "/images/orgonite-piramid.jpg",
+    "price": 25.0,
+    "tags": ["Orgonita", "Piramidal", "Premium"]
+  }
+]
