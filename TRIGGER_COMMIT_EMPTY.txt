@@ -1,1 +1,2 @@
 # Trigger build vacío para CI/CD
+# Fix branding: Orgonica sin tilde - Build #
