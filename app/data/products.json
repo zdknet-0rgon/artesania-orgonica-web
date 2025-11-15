@@ -1,15 +1,6 @@
 {
   "products": [
     {
-      "id": "org-001",
-      "name": "Orgonita Pirámide Cuarzo Rosa",
-      "category": "orgonitas",
-      "price": 35.00,
-      "description": "Pirámide de orgonita con cuarzo rosa, ideal para armonizar espacios",
-      "image": "/images/orgonita-piramide.jpg",
-      "stock": 10
-    },
-    {
       "id": "cem-001",
       "name": "Cemenite Protección",
       "category": "cemenites",
@@ -17,24 +8,6 @@
       "description": "Cemenite artesanal para protección energética",
       "image": "/images/cemenite.jpg",
       "stock": 15
-    },
-    {
-      "id": "pir-001",
-      "name": "Pirámide Energética Grande",
-      "category": "piramides",
-      "price": 65.00,
-      "description": "Pirámide grande para meditación y equilibrio",
-      "image": "/images/piramide-grande.jpg",
-      "stock": 5
-    },
-    {
-      "id": "col-001",
-      "name": "Colgante Orgonita Ojo de Tigre",
-      "category": "colgantes",
-      "price": 18.00,
-      "description": "Colgante de orgonita con ojo de tigre para protección personal",
-      "image": "/images/colgante-ojotiagre.jpg",
-      "stock": 25
     }
   ]
 }
