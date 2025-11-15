@@ -5,18 +5,19 @@ import Footer from './components/Footer';
 import WorkflowAlert from './components/WorkflowAlert';
 
 export const metadata = {
-  title: "Artesanía Orgonica - Productos Artesanales Naturales",
-  description: "Descubre nuestra selección única de productos artesanales orgánicos hechos con amor y dedicación. Calidad premium para tu hogar.",
-  keywords: ["artesanía", "orgánico", "productos naturales", "hecho a mano", "artesanal"],
-  authors: [{ name: "Artesanía Orgonica" }],
+  title: "Artesanía Orgónica - Productos Artesanales Naturales",
+  description: "Descubre nuestra selección única de productos artesanales orgónicos hechos con amor y dedicación. Calidad premium para tu hogar.",
+  keywords: ["artesanía", "orgónico", "productos naturales", "hecho a mano", "artesanal"],
+  authors: [{ name: "Artesanía Orgónica" }],
   openGraph: {
-    title: "Artesanía Orgonica - Productos Artesanales Naturales",
-    description: "Productos artesanales orgánicos de calidad premium",
+    title: "Artesanía Orgónica - Productos Artesanales Naturales",
+    description: "Productos artesanales orgónicos de calidad premium",
     type: "website"
   }
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {  return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
     <html lang="es" suppressHydrationWarning>
       <body className="theme-transition">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
