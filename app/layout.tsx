@@ -2,7 +2,7 @@ import './globals.css';
 import { ThemeProvider } from './components/theme-provider';
 import Header from '../components/Header';
 import Footer from './components/Footer';
-import WorkflowAlert from './components/WorkflowAlert';
+// import WorkflowAlert from './components/WorkflowAlert';
 
 export const metadata = {
   title: "Artesanía Orgónica - Productos Artesanales Naturales",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" suppressHydrationWarning>
       <body className="theme-transition">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <WorkflowAlert />
+          {/* <WorkflowAlert /> */}
           <div className="flex min-h-screen flex-col">
             <Header />
             <main className="flex-1">{children}</main>
