@@ -36,6 +36,13 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           SOUNDCLOUD_TOKEN: ${{ secrets.SOUNDCLOUD_TOKEN }}
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          projectKey: zdknet-0rgon_artesania-orgonica-web
+          organization: zdknet-0rgon
 
   test:
     runs-on: ubuntu-latest
