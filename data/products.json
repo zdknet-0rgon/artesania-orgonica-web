@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Orgonita Pirámide Azul",
+    "description": "Hermosa orgonita piramidal de color azul con cristales de cuarzo y virutas de cobre. Ideal para armonizar espacios.",
+    "price": 29.99,
+    "category": "orgonitas",
+    "image": "/images/products/orgonita-azul.jpg",
+    "inStock": true
+  },
+  {
+    "id": "2",
+    "name": "Colgante Orgonita Corazón",
+    "description": "Colgante de orgonita en forma de corazón con amatista y cobre. Protección personal elegante.",
+    "price": 19.99,
+    "category": "colgantes",
+    "image": "/images/products/colgante-corazon.jpg",
+    "inStock": true
+  },
+  {
+    "id": "3",
+    "name": "Cemenite Grande",
+    "description": "Cemenite de gran tamaño para jardines y espacios amplios. Potente transmutador de energías.",
+    "price": 45.00,
+    "category": "cemenites",
+    "image": "/images/products/cemenite-grande.jpg",
+    "inStock": true
+  },
+  {
+    "id": "4",
+    "name": "Pirámide Orgánica Dorada",
+    "description": "Pirámide orgánica con acabado dorado, cuarzo rosa y virutas metálicas. Belleza y funcionalidad.",
+    "price": 35.50,
+    "category": "piramides",
+    "image": "/images/products/piramide-dorada.jpg",
+    "inStock": true
+  },
+  {
+    "id": "5",
+    "name": "Orgonita Verde Esmeralda",
+    "description": "Orgonita en tonos verdes con cristales naturales. Perfecta para meditation y relajación.",
+    "price": 27.99,
+    "category": "orgonitas",
+    "image": "/images/products/orgonita-verde.jpg",
+    "inStock": true
+  },
+  {
+    "id": "6",
+    "name": "Colgante Espiral",
+    "description": "Elegante colgante con diseño en espiral, turmalina negra y resina transparente.",
+    "price": 22.00,
+    "category": "colgantes",
+    "image": "/images/products/colgante-espiral.jpg",
+    "inStock": true
+  }
+]
